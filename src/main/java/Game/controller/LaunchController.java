@@ -26,7 +26,7 @@ public class LaunchController {
 
     public void startAction(ActionEvent actionEvent) throws IOException {
         if (playerName1TextField.getText().isEmpty() ||playerName2TextField.getText().isEmpty() ) {
-            errorLabel.setText(" enter all the names , please");
+            errorLabel.setText("Inputs invalid");
         } else {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/game.fxml"));
             Parent root = fxmlLoader.load();
