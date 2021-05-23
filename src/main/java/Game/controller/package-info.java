@@ -3,4 +3,4 @@
 /**
  * Provides classes for managing game Controllers.
  */
-package controller;
+package Game.controller;
