@@ -98,7 +98,7 @@ public class GameStateTest {
         GameState gameState = new GameState();
         gameState.Play(0,0);
         assertEquals(new GameState(
-                       new int[][] {
+                new int[][] {
                         {1, 1, 0,0,0,0},
                         {1, 0, 0,0,0,0},
                         {0, 0, 0,0,0,0},
@@ -151,11 +151,11 @@ public class GameStateTest {
     void testToString() {
         GameState StoneGame = new GameState();
         assertEquals("EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
-                     + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
-                     + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
-                     + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
-                     + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
-                     + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n", StoneGame.toString());
+                + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
+                + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
+                + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
+                + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
+                + "EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n", StoneGame.toString());
         GameState StoneGame2 = new GameState(new int[][] {
                 {0, 0, 0,0,0,0},
                 {0, 0, 0,1,0,0},
@@ -164,11 +164,10 @@ public class GameStateTest {
                 {0, 2, 2,2,0,0},
                 {0, 0, 2,0,0,0}});
         assertEquals("EMPTY EMPTY EMPTY EMPTY EMPTY EMPTY \n"
-                     + "EMPTY EMPTY EMPTY X EMPTY EMPTY \n"
-                     + "EMPTY EMPTY X X X EMPTY \n"
-                     + "EMPTY EMPTY O X EMPTY EMPTY \n"
-                     + "EMPTY O O O EMPTY EMPTY \n"
-                     + "EMPTY EMPTY O EMPTY EMPTY EMPTY \n", StoneGame2.toString());
+                + "EMPTY EMPTY EMPTY X EMPTY EMPTY \n"
+                + "EMPTY EMPTY X X X EMPTY \n"
+                + "EMPTY EMPTY O X EMPTY EMPTY \n"
+                + "EMPTY O O O EMPTY EMPTY \n"
+                + "EMPTY EMPTY O EMPTY EMPTY EMPTY \n", StoneGame2.toString());
     }
 }
-

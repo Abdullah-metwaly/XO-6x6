@@ -16,12 +16,12 @@ public class GameState {
 
 
 
-    private  Player playerOne =new Player("");
+    private  Player playerOne ;
 
-    private  Player playerTwo =new Player("");
+    private  Player playerTwo ;
 
 
-    private  Player activePlayer =new Player("");
+    private  Player activePlayer ;
     int status = 0;
 
 
@@ -151,7 +151,7 @@ public class GameState {
      * choose a cell at the specified position and occupy it with the associated letter based on the player and its neighbouring cells .
      *
      * @param row the row of the Cell to be Chosen
-     * @param col the column of the cell to be choen
+     * @param col the column of the cell to be chosen
      */
     public void Play(int row, int col) {
         ArrayList<Integer[]> Cells = new ArrayList<>();
@@ -173,7 +173,7 @@ public class GameState {
             }
         }
         log.info(String.valueOf(this));
-        log.info("Stone at ({},{}) has be chosen by the player.", row, col);
+        log.info("Game at ({},{}) has be chosen by the player.", row, col);
     }
 
     private boolean rowsAndColWithinTheRange(int row, int col){

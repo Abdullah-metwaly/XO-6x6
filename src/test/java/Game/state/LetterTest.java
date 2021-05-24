@@ -11,8 +11,8 @@ class LetterTest {
         Letter letter =new Letter(2,2);
         assertEquals("EMPTY", letter.toString());
         letter.setStatus(2);
-        assertEquals("RED", letter.toString());
+        assertEquals("O", letter.toString());
         letter.setStatus(1);
-        assertEquals("YELLOW", letter.toString());
+        assertEquals("X", letter.toString());
     }
 }
