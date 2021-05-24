@@ -139,8 +139,8 @@ public class GameController {
                    stepCount = stepCountPlayerOne;
                    winner =playerOne;
                }
-               log.info("Player {} won the game in {} steps.", winner.getName(), stepCount);
-               messageLabel.setText(" Game is finished (No more cells to be chosen) ... Player "+ winner.getName() + " won the game");
+               log.info("Player {} won in {} steps.", winner.getName(), stepCount);
+               messageLabel.setText(" Game is finished, Player "+ winner.getName() + " won the game");
 
                EndGameButton.setText("Finish");
 
